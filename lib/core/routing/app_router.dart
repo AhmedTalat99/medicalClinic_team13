@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:medical_clinic_team13/features/splash/ui/screens/splash_screen.dart';
 import '../theming/consts/app_strings.dart';
 
 abstract class AppRouter {
@@ -22,7 +23,7 @@ abstract class AppRouter {
     switch (settings.name) {
       case '/':
         return MaterialPageRoute(builder: (context) {
-          return const Scaffold(); //replace this Scaffold with a Splash Screen
+          return const SplashScreen(); //replace this Scaffold with a Splash Screen
         });
 
 
