@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
-import '../../../core/consts/app_strings.dart';
-import '../../../views/features/splash_screen/splash_screen.dart';
+import '../theming/consts/app_strings.dart';
 
 abstract class AppRouter {
   static const kSplash = '/';
@@ -23,7 +22,7 @@ abstract class AppRouter {
     switch (settings.name) {
       case '/':
         return MaterialPageRoute(builder: (context) {
-          return const SplashScreen(); //replace this Scaffold with a Splash Screen
+          return const Scaffold(); //replace this Scaffold with a Splash Screen
         });
 
 
