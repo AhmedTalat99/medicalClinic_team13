@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:medical_clinic_team13/features/home/ui/screen/home_Screen.dart';
 import 'package:medical_clinic_team13/features/splash/ui/screens/splash_screen.dart';
 import '../theming/consts/app_strings.dart';
 
@@ -21,9 +22,14 @@ abstract class AppRouter {
 
   static Route<dynamic>? router(RouteSettings settings) {
     switch (settings.name) {
-      case '/':
+      case kSplash:
         return MaterialPageRoute(builder: (context) {
           return const SplashScreen(); //replace this Scaffold with a Splash Screen
+        });
+
+      case kHomeUser:
+        return MaterialPageRoute(builder: (context) {
+          return const HomeScreen(); //replace this Scaffold with a Home Screen
         });
 
 

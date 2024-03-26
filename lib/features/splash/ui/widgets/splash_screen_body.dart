@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:medical_clinic_team13/core/theming/consts/app_assets.dart';
 import 'package:medical_clinic_team13/core/theming/consts/app_colors.dart';
 import 'package:medical_clinic_team13/core/theming/consts/app_strings.dart';
+import 'package:medical_clinic_team13/features/onboarding/ui/screens/onboarding_screen.dart';
 
 class SplashScreenBody extends StatelessWidget {
   const SplashScreenBody({super.key});
@@ -12,7 +13,7 @@ class SplashScreenBody extends StatelessWidget {
 
     return FlutterSplashScreen.fadeIn(
       backgroundColor: AppColors.secondary,
-      duration: const Duration(milliseconds: 5000),
+      duration: const Duration(milliseconds: 3000),
       childWidget: Column(
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
@@ -36,7 +37,7 @@ class SplashScreenBody extends StatelessWidget {
         ],
       ),
       onAnimationEnd: () => debugPrint("On Fade In End"),
-      nextScreen: Container(),
+      nextScreen: const OnboardingScreen(),
     );
   }
 }

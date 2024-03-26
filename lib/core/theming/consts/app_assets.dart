@@ -6,7 +6,8 @@ abstract class AppAssets {
   static const String appLogo = '$images/Logo.png';
 
   // onboarding
-  static const String onboarding1 = '$images/choose_doctor.png';
-  static const String onboarding2 = '$images/choose_date_time.png';
-  static const String onboarding3 = '$images/communicate_doctor.png';
+  //change name the onboarding images
+  static const String onboarding1 = '$images/onboarding1.png';
+  static const String onboarding2 = '$images/onboarding2.png';
+  static const String onboarding3 = '$images/onboarding3.png';
 }
