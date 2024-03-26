@@ -55,53 +55,56 @@ class _homescreenState extends State<homescreen> {
           ),
         ],
       ),
-      body: SingleChildScrollView(
-          child: Container(
-        height: MediaQuery.of(context).size.height,
-        width: MediaQuery.of(context).size.width,
-        child: Column(children: [
-          Padding(
-            padding: const EdgeInsets.symmetric(horizontal: 16.0, vertical: 8),
-            child: Row(
-              children: [
-                Search_widget(),
-                const SizedBox(
-                  width: 10,
-                ),
-                const myiconimage(
-                  img: 'assets/images/filter.png',
-                  wid: 50.0,
-                  hig: 40.0,
-                ),
-              ],
-            ),
-          ),
-          SizedBox(
-            height: 15,
-          ),
-          ImageSlider(),
-          SizedBox(
-            height: 15,
-          ),
-          Container(
-            padding: EdgeInsets.symmetric(horizontal: 16.0),
-            child: seeAllRow('Category', nav),
-          ),
-          SizedBox(
-            height: 15,
-          ),
-          card_category(),
-          SizedBox(
-            height: 10,
-          ),
-          Container(
-              padding: EdgeInsets.symmetric(
-                horizontal: 16.0,
+      body: LayoutBuilder(
+          builder: (BuildContext context, BoxConstraints constraints) {
+        return Container(
+          height: MediaQuery.of(context).size.height,
+          width: MediaQuery.of(context).size.width,
+          child: Column(children: [
+            Padding(
+              padding:
+                  const EdgeInsets.symmetric(horizontal: 16.0, vertical: 8),
+              child: Row(
+                children: [
+                  Search_widget(),
+                  const SizedBox(
+                    width: 10,
+                  ),
+                  const myiconimage(
+                    img: 'assets/images/filter.png',
+                    wid: 50.0,
+                    hig: 40.0,
+                  ),
+                ],
               ),
-              child: seeAllRow('Doctors', nav)),
-          card_Doctor(),
-        ]),
-      )),
+            ),
+            SizedBox(
+              height: 15,
+            ),
+            ImageSlider(),
+            SizedBox(
+              height: 15,
+            ),
+            Container(
+              padding: EdgeInsets.symmetric(horizontal: 16.0),
+              child: seeAllRow('Category', nav),
+            ),
+            SizedBox(
+              height: 15,
+            ),
+            card_category(),
+            SizedBox(
+              height: 10,
+            ),
+            Container(
+                padding: EdgeInsets.symmetric(
+                  horizontal: 16.0,
+                ),
+                child: seeAllRow('Doctors', nav)),
+            card_Doctor(),
+          ]),
+        );
+      }),
       bottomNavigationBar: bottombar(),
     );
   }
