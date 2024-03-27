@@ -1,34 +1,46 @@
-import 'package:expense_tracker/core/theming/fonts.dart';
 import 'package:flutter/material.dart';
+import 'package:medical_clinic_team13/core/theming/consts/app_colors.dart';
+import 'package:medical_clinic_team13/core/theming/consts/app_fonts.dart';
 
-import '../theming/colors.dart';
+
 
 class DefaultTextFormField extends StatelessWidget {
-  const DefaultTextFormField({super.key, required this.hintText, this.suffixIcon, required this.isPassword, required this.controller, this.validator});
-
-  final String hintText;
+  const DefaultTextFormField({super.key, this.labelText, this.prefixIcon, required this.controller, required this.isPassword, required this.color, this.suffixIcon, this.validator, required this.readOnly, required this.style, this.labelStyle});
+  final String ? labelText;
+  final Widget ? prefixIcon;
   final Widget ? suffixIcon;
-  final bool isPassword;
   final TextEditingController controller;
+  final bool isPassword;
+  final Color color;
   final String? Function(String?)? validator;
+  final bool  readOnly;
+  final TextStyle style;
+  final TextStyle ? labelStyle;
 
   @override
   Widget build(BuildContext context) {
     return TextFormField(
+      readOnly: readOnly,
+      style: style,
       controller: controller,
-      validator: validator,
       obscureText: isPassword,
-      style: AppFont.font18GreyW300,
+      validator: validator,
       decoration: InputDecoration(
-          suffixIcon: suffixIcon,
-          hintText: hintText,
-          hintStyle: AppFont.font18GreyW300,
-          fillColor: AppColors.greyColor,
-          filled: true,
-          border: OutlineInputBorder(
-            borderRadius: BorderRadius.circular(30),
-          )
+        contentPadding: EdgeInsets.symmetric(vertical: 10),
+        prefixIcon: prefixIcon,
+        suffixIcon: suffixIcon,
+        labelText: labelText,
+        labelStyle: labelStyle,
+        border: OutlineInputBorder(
+          borderRadius: BorderRadius.circular(14),
+          borderSide: BorderSide(color: color),
+        ),
+        enabledBorder: OutlineInputBorder(
+          borderRadius: BorderRadius.circular(14),
+          borderSide: BorderSide(color: color),
+        ),
       ),
     );
   }
 }
+
