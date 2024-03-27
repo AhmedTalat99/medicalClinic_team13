@@ -1,21 +1,21 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:medical_clinic_team13/core/theming/consts/app_colors.dart';
 
 Widget card_category() {
   return SizedBox(
-      height: 80,
+      height: 65.h,
       child: ListView.builder(
           itemCount: 10,
           scrollDirection: Axis.horizontal,
           itemBuilder: (context, index) => Container(
-                height: 10,
                 width: 150,
                 margin: EdgeInsets.all(10),
                 child: Center(
                   child: Container(
-                    width: 150,
-                    height: 60,
+                    height: MediaQuery.of(context).size.height / 9,
                     decoration: BoxDecoration(
-                      color: Color(0xFF336EA6),
+                      color: AppColors.primary,
                       borderRadius: BorderRadius.circular(16),
                     ),
                     child: Center(
@@ -23,7 +23,7 @@ Widget card_category() {
                         'Speech',
                         style: TextStyle(
                           color: Colors.white,
-                          fontSize: 18,
+                          fontSize: 18.sp,
                         ),
                       ),
                     ),

@@ -1,5 +1,6 @@
 import 'dart:async';
 import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
 
 class ImageSlider extends StatefulWidget {
   @override
@@ -36,7 +37,7 @@ class _ImageSliderState extends State<ImageSlider> {
   @override
   Widget build(BuildContext context) {
     return Container(
-      height: 120.0,
+      height: 90.0.h,
       child: PageView.builder(
         controller: _pageController,
         itemCount: _imagePaths.length,

@@ -66,6 +66,10 @@ flutter:
     - assets/images/category.png
     - assets/images/Home.png
     - assets/images/Vector.png
+    - assets/images/category_nav.png
+    - assets/images/home_nav.png
+    - assets/images/user_nav.png
+    - assets/images/watch_nav.png
   # assets:
   #   - images/a_dot_burr.jpeg
   #   - images/a_dot_ham.jpeg

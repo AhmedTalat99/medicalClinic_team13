@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
 
 Widget seeAllRow(String title, void Function()? onpress) {
   return Row(
@@ -7,7 +8,7 @@ Widget seeAllRow(String title, void Function()? onpress) {
       Text(
         title,
         style: TextStyle(
-          fontSize: 18.0,
+          fontSize: 18.0.sp,
           color: Color(0xFF233B55),
           fontWeight: FontWeight.bold,
         ),
@@ -17,7 +18,7 @@ Widget seeAllRow(String title, void Function()? onpress) {
           Text(
             'See All',
             style: TextStyle(
-              fontSize: 20.0,
+              fontSize: 20.0.sp,
               color: Color(0xFF233B55),
             ),
           ),
