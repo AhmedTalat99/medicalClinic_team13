@@ -19,8 +19,8 @@ class CustomOnboardingBackground extends StatelessWidget {
     return Column(
       mainAxisAlignment: MainAxisAlignment.end,
       children: [
-        const SizedBox(
-          height: 20,
+         SizedBox(
+          height: MediaQuery.of(context).size.height * 0.03,
         ),
         CustomOnboardingImage(
           image: image,
@@ -31,7 +31,7 @@ class CustomOnboardingBackground extends StatelessWidget {
         ),
         Container(
           width: double.infinity,
-          height: 390,
+          height: MediaQuery.of(context).size.height * 0.8,
           decoration: const BoxDecoration(
             color: Colors.white,
             borderRadius: BorderRadius.vertical(

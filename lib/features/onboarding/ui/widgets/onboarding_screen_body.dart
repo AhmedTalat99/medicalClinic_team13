@@ -5,6 +5,7 @@ import 'package:medical_clinic_team13/core/theming/consts/app_colors.dart';
 import 'package:medical_clinic_team13/features/home/ui/screen/home_Screen.dart';
 import 'package:medical_clinic_team13/features/onboarding/ui/widgets/custom_onboarding_background.dart';
 
+
 class OnboardingScreenBody extends StatelessWidget {
   const OnboardingScreenBody({super.key});
 
@@ -15,10 +16,17 @@ class OnboardingScreenBody extends StatelessWidget {
       pageBackgroundColor: AppColors.primary,
       controllerColor: AppColors.primary,
       finishButtonText: 'Start',
-      onFinish: (){
-        Navigator.push(context, MaterialPageRoute(builder: (context) {
-          return const HomeScreen();
-        },),);
+      onFinish: () {
+        Navigator.push(
+          context,
+
+
+          MaterialPageRoute(
+            builder: (context) {
+              return const HomeScreen();
+            },
+          ),
+        );
       },
       finishButtonStyle: const FinishButtonStyle(
         backgroundColor: AppColors.primary,
@@ -44,11 +52,11 @@ class OnboardingScreenBody extends StatelessWidget {
       totalPage: 3,
       speed: 1.8,
       centerBackground: true,
-      background: const [
+      background:  [
         CustomOnboardingBackground(
           image: AppAssets.onboarding1,
           title: 'Choose your doctor',
-          subtitle: 'Application provide you with alot of'
+          subtitle: 'Application provide you with a lot of'
               ' experienced doctors you can see'
               ' these profile and choose one you'
               ' want to appointment with him.',

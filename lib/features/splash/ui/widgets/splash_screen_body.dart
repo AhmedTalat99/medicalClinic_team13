@@ -1,8 +1,8 @@
 import 'package:another_flutter_splash_screen/another_flutter_splash_screen.dart';
 import 'package:flutter/material.dart';
-import 'package:medical_clinic_team13/core/theming/consts/app_assets.dart';
 import 'package:medical_clinic_team13/core/theming/consts/app_colors.dart';
-import 'package:medical_clinic_team13/core/theming/consts/app_strings.dart';
+import 'package:medical_clinic_team13/core/widgets/custom_app_name.dart';
+import 'package:medical_clinic_team13/core/widgets/custom_logo_image.dart';
 import 'package:medical_clinic_team13/features/onboarding/ui/screens/onboarding_screen.dart';
 
 class SplashScreenBody extends StatelessWidget {
@@ -10,30 +10,20 @@ class SplashScreenBody extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-
     return FlutterSplashScreen.fadeIn(
       backgroundColor: AppColors.secondary,
       duration: const Duration(milliseconds: 3000),
-      childWidget: Column(
+      childWidget: const Column(
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
-          Image.asset(
-            AppAssets.appLogo,
+          CustomLogoImage(
             width: 178,
             height: 226,
           ),
-          const SizedBox(
-           height: 12,
+          SizedBox(
+            height: 12,
           ),
-          const Text(
-            AppStrings.splashName,
-            style: TextStyle(
-              fontSize: 24,
-              fontWeight: FontWeight.bold,
-              color: AppColors.primary,
-              fontFamily: 'Peralta',
-            ),
-          ),
+          CustomAppName(size: 24,),
         ],
       ),
       onAnimationEnd: () => debugPrint("On Fade In End"),
