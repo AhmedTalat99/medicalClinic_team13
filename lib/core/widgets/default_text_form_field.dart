@@ -1,6 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:medical_clinic_team13/core/theming/consts/app_colors.dart';
-import 'package:medical_clinic_team13/core/theming/consts/app_fonts.dart';
 
 
 

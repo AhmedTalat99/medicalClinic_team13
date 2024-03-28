@@ -10,10 +10,11 @@ environment:
 dependencies:
   cupertino_icons: ^1.0.2
   dio: ^5.4.1
-  flutter_bloc: ^8.1.5
   flutter:
     sdk: flutter
+  flutter_bloc: ^8.1.5
   flutter_screenutil: ^5.9.0
+  google_fonts: ^6.2.1
 
 dev_dependencies:
   flutter_lints: ^2.0.0
@@ -22,16 +23,5 @@ dev_dependencies:
 
 flutter:
   uses-material-design: true
-
   assets:
-     - assets/images/
-
-  fonts:
-     - family: OleoScriptSwashCaps
-       fonts:
-         - asset: assets/fonts
-           style: italic
-     - family: Trajan Pro
-       fonts:
-         - asset: assets/fonts
-           weight: 400
+    - assets/images/
