@@ -3,11 +3,15 @@ abstract class AppStrings {
   static const splashName = 'Markaz ElAmal';
 
   // General
+  static const congratulations = 'Congratulations';
   static const skip = 'Skip';
+  static const home = 'Home';
+  static const category = 'Category';
+  static const book = 'Book';
+  static const profile = 'Profile';
   static const notFound = 'not Found';
   static const next = 'Next';
   static const switchToArabic = 'AR';
-
   static const forgotPassword = 'Forgot password ?';
   static const email = 'Email';
   static const passward = 'Passward';
@@ -17,4 +21,10 @@ abstract class AppStrings {
   static const notValidEmail = "Please enter a valid email";
   static const notValidPassword = "Password must be at least 8 characters";
   static const notMatch = "Not match";
+
+  // Names of doctors 
+  static const osama = 'Dr: Osama ali';
+  static const sara = 'Dr: Sara Selem';
+  static const alaa = 'Dr: Alaa Mohamed';
+  static const may = 'Dr: May morad';
 }
