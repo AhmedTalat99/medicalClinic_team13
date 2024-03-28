@@ -1,13 +1,17 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/rendering.dart';
+import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:medical_clinic_team13/featurs/Homepage/logic/homecubit.dart';
+import 'package:medical_clinic_team13/featurs/Homepage/logic/homestate.dart';
 import 'package:medical_clinic_team13/featurs/Homepage/ui/widgets/Doctor_Cards.dart';
 import 'package:medical_clinic_team13/featurs/Homepage/ui/widgets/Seeall.dart';
 import 'package:medical_clinic_team13/featurs/Homepage/ui/widgets/Sliderimage.dart';
-import 'package:medical_clinic_team13/core/widgets/bottomnavigationbar.dart';
 import 'package:medical_clinic_team13/featurs/Homepage/ui/widgets/category_cards.dart';
 import 'package:medical_clinic_team13/featurs/Homepage/ui/widgets/iconwidget.dart';
 import 'package:medical_clinic_team13/featurs/Homepage/ui/widgets/searchwidget.dart';
+
+import '../../../../core/widgets/bottomnavigationbar.dart';
 
 class homescreen extends StatefulWidget {
   const homescreen({super.key});
@@ -104,11 +108,6 @@ class _homescreenState extends State<homescreen> {
           ]),
         );
       }),
-      bottomNavigationBar: SafeArea(
-        child: Container(
-            height: MediaQuery.of(context).size.height / 9.67,
-            child: bottombar()),
-      ),
     );
   }
 }
