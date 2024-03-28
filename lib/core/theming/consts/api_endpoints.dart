@@ -1,7 +1,7 @@
 class ApiEndPoints {
   // auth
   static const String _auth = '/auth';
-  static const String login = '$_auth/login';
+  static const String login = '$_auth/patient/login';
   static const String register = '$_auth/register';
   static const String requestEmailVerificationCode =
       '$_auth/email-verification-code';
