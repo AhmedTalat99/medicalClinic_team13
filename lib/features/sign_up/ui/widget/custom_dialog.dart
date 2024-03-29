@@ -9,7 +9,7 @@ class CustomDialog extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    bool isTyping =false;
+
     return Align(
       alignment: Alignment.bottomCenter,
       child: PopScope(
