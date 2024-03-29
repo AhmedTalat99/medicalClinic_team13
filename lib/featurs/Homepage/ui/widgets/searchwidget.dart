@@ -1,10 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:medical_clinic_team13/core/theming/consts/app_colors.dart';
 
 Widget Search_widget() {
   return Container(
     width: 250.0.w,
-    height: 40.0.h,
+    height: 27.0.h,
     decoration: BoxDecoration(
       color: const Color(0x233B55),
       borderRadius: BorderRadius.circular(8.0),
@@ -14,7 +15,11 @@ Widget Search_widget() {
       children: [
         Padding(
           padding: EdgeInsets.only(left: 15),
-          child: Icon(Icons.search, size: 30.sp),
+          child: Icon(
+            Icons.search,
+            size: 30.sp,
+            color: AppColors.four,
+          ),
         ),
         Expanded(
           child: Padding(
@@ -22,7 +27,10 @@ Widget Search_widget() {
             child: TextField(
               decoration: InputDecoration(
                 hintText: 'Search',
-                hintStyle: TextStyle(fontSize: 20.0.sp, color: Colors.black),
+                hintStyle: TextStyle(
+                    fontFamily: 'Poppins',
+                    fontSize: 20.0.sp,
+                    color: AppColors.four),
                 border: InputBorder.none,
               ),
             ),

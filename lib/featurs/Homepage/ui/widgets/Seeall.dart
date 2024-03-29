@@ -8,7 +8,8 @@ Widget seeAllRow(String title, void Function()? onpress) {
       Text(
         title,
         style: TextStyle(
-          fontSize: 18.0.sp,
+          fontFamily: 'Poppins',
+          fontSize: 20.0.sp,
           color: Color(0xFF233B55),
           fontWeight: FontWeight.bold,
         ),
@@ -18,6 +19,7 @@ Widget seeAllRow(String title, void Function()? onpress) {
           Text(
             'See All',
             style: TextStyle(
+              fontFamily: 'Poppins',
               fontSize: 20.0.sp,
               color: Color(0xFF233B55),
             ),

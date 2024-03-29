@@ -1,5 +1,3 @@
-import 'dart:js';
-
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:medical_clinic_team13/core/theming/consts/app_colors.dart';
@@ -61,8 +59,8 @@ Widget card_Doctor() {
                           padding: EdgeInsets.all(8.0),
                           decoration: BoxDecoration(
                             borderRadius: BorderRadius.circular(16.0),
-                            color: Color(
-                                0xFF336EA6), // Placeholder color, you can remove this line or change to your desired color
+                            color: AppColors
+                                .primary, // Placeholder color, you can remove this line or change to your desired color
                           ),
                           child: Row(
                             mainAxisSize: MainAxisSize.min,
@@ -92,6 +90,7 @@ Widget card_Doctor() {
                       child: Text(
                         "Dr sara selem",
                         style: TextStyle(
+                            fontFamily: 'Poppins',
                             color: Colors.white,
                             fontSize: 20.sp,
                             fontWeight: FontWeight.bold),
@@ -104,8 +103,9 @@ Widget card_Doctor() {
                       child: Text(
                         '12 experence',
                         style: TextStyle(
+                            fontFamily: 'Poppins',
                             fontSize: 16.sp,
-                            color: Colors.grey,
+                            color: AppColors.third,
                             fontWeight: FontWeight.bold),
                       ),
                     ),
@@ -116,6 +116,7 @@ Widget card_Doctor() {
                       child: Text(
                         '20 Dollar',
                         style: TextStyle(
+                            fontFamily: 'Poppins',
                             color: Colors.white,
                             fontSize: 16.sp,
                             fontWeight: FontWeight.bold),
@@ -128,7 +129,8 @@ Widget card_Doctor() {
                         child: Text(
                       'know more ...',
                       style: TextStyle(
-                          color: Colors.grey,
+                          fontFamily: 'Poppins',
+                          color: AppColors.third,
                           fontSize: 16.sp,
                           fontWeight: FontWeight.bold),
                     )),

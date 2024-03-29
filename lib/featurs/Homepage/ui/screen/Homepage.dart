@@ -1,17 +1,12 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/rendering.dart';
-import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-import 'package:medical_clinic_team13/featurs/Homepage/logic/homecubit.dart';
-import 'package:medical_clinic_team13/featurs/Homepage/logic/homestate.dart';
 import 'package:medical_clinic_team13/featurs/Homepage/ui/widgets/Doctor_Cards.dart';
 import 'package:medical_clinic_team13/featurs/Homepage/ui/widgets/Seeall.dart';
 import 'package:medical_clinic_team13/featurs/Homepage/ui/widgets/Sliderimage.dart';
 import 'package:medical_clinic_team13/featurs/Homepage/ui/widgets/category_cards.dart';
 import 'package:medical_clinic_team13/featurs/Homepage/ui/widgets/iconwidget.dart';
 import 'package:medical_clinic_team13/featurs/Homepage/ui/widgets/searchwidget.dart';
-
-import '../../../../core/widgets/bottomnavigationbar.dart';
 
 class homescreen extends StatefulWidget {
   const homescreen({super.key});
@@ -38,26 +33,31 @@ class _homescreenState extends State<homescreen> {
               ),
             ),
             // Title
-            Text(
-              'Markaz ElAmal',
-              style: TextStyle(fontSize: 17.sp, fontWeight: FontWeight.bold),
+            Padding(
+              padding: const EdgeInsets.only(top: 4),
+              child: Text(
+                'Markaz ElAmal',
+                style: TextStyle(
+                  fontFamily: 'Peralta',
+                  fontSize: 17.sp,
+                ),
+              ),
             ),
           ],
         ),
         actions: <Widget>[
           // Message Icon
           myiconimage(
-            myicon: Icons.notifications,
+            img: 'assets/images/bell.png',
+            wid: 35.0.w,
+            hig: 35.0.h,
           ),
-          SizedBox(
-            width: 15,
-          ),
+
           // Notification Icon
           myiconimage(
-            myicon: Icons.chat,
-          ),
-          SizedBox(
-            width: 20.w,
+            img: 'assets/images/1.png',
+            wid: 35.0.w,
+            hig: 35.0.h,
           ),
         ],
       ),
@@ -74,11 +74,13 @@ class _homescreenState extends State<homescreen> {
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
                   SizedBox(
-                    height: MediaQuery.of(context).size.height / 16,
+                    height: MediaQuery.of(context).size.height / 18,
                     child: Search_widget(),
                   ),
                   myiconimage(
-                    myicon: Icons.tune,
+                    img: 'assets/images/filter.png',
+                    wid: 43.0.w,
+                    hig: 50.0.h,
                   ),
                 ],
               ),
