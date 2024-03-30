@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'features/login/ui/screen/login_screen.dart';
+import 'package:medical_clinic_team13/features/splash/ui/screens/splash_screen.dart';
 
 void main() {
   WidgetsFlutterBinding.ensureInitialized();
@@ -13,7 +13,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return const MaterialApp(
         debugShowCheckedModeBanner: false,
-        home: LoginScreen()
+        home: SplashScreen()
     );
   }
 }

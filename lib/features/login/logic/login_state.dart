@@ -1,4 +1,5 @@
-part of 'login_cubit.dart';
+
+import '../data/login_model.dart';
 
 abstract class LoginState {}
 
