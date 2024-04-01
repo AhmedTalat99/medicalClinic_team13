@@ -3,8 +3,7 @@ import 'package:dio/dio.dart';
 class ApiService {
   ApiService();
   // base url
-  static const String _baseUrl = "http://auti-kid.atwebpages.com/api/vqa";
-
+  static const String _baseUrl = 'https://markaz-el-amal.onrender.com';
   // dio
   static final Dio _dio = Dio(BaseOptions(
     baseUrl: _baseUrl,
