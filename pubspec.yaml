@@ -85,9 +85,11 @@ flutter:
   fonts:
     - family: Peralta
     - family: Poppins
+    - family: OleoScriptSwashCaps
       fonts:
         - asset: assets/fonts/Peralta-Regular.ttf
         - asset: assets/fonts/Poppins-Regular.ttf
+        - asset: assets/fonts/OleoScriptSwashCaps-Regular.ttf
   #         style: italic
   #   - family: Trajan Pro
   #     fonts:
