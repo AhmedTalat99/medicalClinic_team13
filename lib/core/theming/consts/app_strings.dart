@@ -22,9 +22,17 @@ abstract class AppStrings {
   static const notValidPassword = "Password must be at least 8 characters";
   static const notMatch = "Not match";
 
-  // Names of doctors 
+  // Names of doctors
   static const osama = 'Dr: Osama ali';
   static const sara = 'Dr: Sara Selem';
   static const alaa = 'Dr: Alaa Mohamed';
   static const may = 'Dr: May morad';
+
+  // Category screen
+  static const speech = 'Speech';
+  static const autism = 'Autism';
+  static const learningDifficulties = 'Learning \ndifficulties';
+  static const intelligenceTest = 'Intelligence \ntest';
+  static const behaviorModification = 'Behavior \nmodification';
+  static const skillsDevelopment = 'Skills \ndevelopment';
 }

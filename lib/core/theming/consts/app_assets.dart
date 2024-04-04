@@ -30,14 +30,4 @@ abstract class AppImages {
    static const String learningDifficulties = '$images/learning_difficulties.png';
 }
 
-abstract class AppFonts {
-  // common path
-  static const commonFonts = 'assets/fonts';
 
- // font of Logout screen
-  static const String oleoScriptSwashCaps =
-      '$commonFonts/OleoScriptSwashCaps-Bold.ttf';
-
- // font of Splash screen
-  static const String peralta = '$commonFonts/Peralta-Regular.ttf';
-}
