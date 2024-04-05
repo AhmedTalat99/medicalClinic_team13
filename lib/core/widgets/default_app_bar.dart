@@ -5,12 +5,13 @@ import '../theming/consts/app_fonts.dart';
 import 'default_text_button.dart';
 
 class DefaultAppBar extends StatelessWidget implements PreferredSizeWidget {
-  const DefaultAppBar({super.key, this.isCenter, this.icon, this.text, this.action});
+  const DefaultAppBar({super.key, this.isCenter, this.icon, this.text, this.action, this.function});
 
   final bool ?isCenter;
   final IconData? icon;
   final String ?text;
   final List<Widget>? action;
+  final void Function()? function;
 
   @override
   Size get preferredSize => Size.fromHeight(kToolbarHeight);
@@ -20,7 +21,9 @@ class DefaultAppBar extends StatelessWidget implements PreferredSizeWidget {
     return AppBar(
       backgroundColor: AppColors.primary,
       centerTitle: isCenter,
-      leading: Icon(icon,color: AppColors.secondary,),
+      leading: IconButton(
+        icon: Icon(icon,color: AppColors.secondary,),
+        onPressed: function,),
       title: Text('${text}',style: AppFonts.font24W600White,),
       actions: action,
     );

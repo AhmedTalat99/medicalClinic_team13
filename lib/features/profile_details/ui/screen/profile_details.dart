@@ -16,9 +16,10 @@ class ProfileDetails extends StatelessWidget {
       appBar: DefaultAppBar(
         isCenter: true,
         icon: Icons.arrow_back_ios_new_outlined,
+        function: () => Navigator.pop(context),
         text: 'Profile Details',
         action: [
-          DefaultTextButton(text: 'Edit', style: AppFonts.font24W600White)
+          DefaultTextButton(text: 'Edit', style: AppFonts.font24W600White,)
         ],
       ),
       body: Padding(
