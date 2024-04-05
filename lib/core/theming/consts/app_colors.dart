@@ -10,5 +10,8 @@ abstract class AppColors {
   static const black = Colors.black;
   static const grey = Color.fromARGB(255, 184, 184, 184);
   static const deepBlue = Color(0xff23568a);
+  static const backgroundIcon = Color(0xff336EA6);
+  static const grey2 = Color(0xffBDCAD6);
+
 
 }

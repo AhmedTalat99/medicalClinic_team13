@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
-import '../../../../core/theming/consts/app_assets.dart';
-import '../../../../core/theming/consts/app_colors.dart';
+import '../theming/consts/app_assets.dart';
+import '../theming/consts/app_colors.dart';
 
 class ImageCircle extends StatelessWidget {
   const ImageCircle({super.key});
