@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-import 'features/category/ui/screens/category_screen.dart';
+import 'features/doctors_category/ui/screens/doctors_category_screen.dart';
 
 void main() {
   WidgetsFlutterBinding.ensureInitialized();
@@ -14,7 +14,7 @@ class HomeUser extends StatelessWidget {
   Widget build(BuildContext context) {
     return  MaterialApp(
       debugShowCheckedModeBanner: false,
-      home: CategoryScreen(),
+      home: DoctorsCategoryScreen(),
     );
   }
 }

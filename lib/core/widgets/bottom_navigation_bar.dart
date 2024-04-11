@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:medical_clinic_team13/core/theming/consts/app_colors.dart';
-import 'package:medical_clinic_team13/features/category/ui/screens/category_screen.dart';
+import 'package:medical_clinic_team13/features/doctors_category/ui/screens/doctors_category_screen.dart';
 
 class bottombar extends StatefulWidget {
   const bottombar({super.key});
@@ -18,10 +18,10 @@ class _bottombarState extends State<bottombar> {
     homescreen(), // Replace with your page
     homescreen(),// Replace with your page
     homescreen(), */ // Replace with your page
+    /* CategoryScreen(),
     CategoryScreen(),
     CategoryScreen(),
-    CategoryScreen(),
-    CategoryScreen(),
+    CategoryScreen(), */
   ];
 
   void _onItemTapped(int index) {
