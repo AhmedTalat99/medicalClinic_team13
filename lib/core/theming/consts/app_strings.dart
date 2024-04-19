@@ -8,6 +8,7 @@ abstract class AppStrings {
   static const home = 'Home';
   static const category = 'Category';
   static const book = 'Book';
+  static const bookDoctor = 'Book a doctor';
   static const profile = 'Profile';
   static const notFound = 'not Found';
   static const next = 'Next';

@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:medical_clinic_team13/core/theming/consts/app_colors.dart';
 
-Widget seeAllRow(String title, void Function()? onpress) {
+Widget SelectShapeItem(String title, void Function()? onpress) {
   return Row(
     mainAxisAlignment: MainAxisAlignment.spaceBetween,
     children: [
@@ -17,24 +18,20 @@ Widget seeAllRow(String title, void Function()? onpress) {
           ),
         ),
       ),
-      Row(
-        children: [
-          Text(
-            'See All',
-            style: TextStyle(
-              fontFamily: 'Poppins',
-              fontSize: 20.0.sp,
-              color: Color(0xFF233B55),
+      Container(
+        color: AppColors.brightGrey,
+        child: Row(
+          children: [
+            IconButton(
+              icon: Icon(Icons.grid_view,color:AppColors.springGreen),
+              onPressed: onpress,
             ),
-          ),
-          SizedBox(
-            width: 5,
-          ),
-          IconButton(
-            icon: Icon(Icons.arrow_forward),
-            onPressed: onpress,
-          ),
-        ],
+            IconButton(
+              icon: Icon(Icons.list,color:AppColors.black),
+              onPressed: onpress,
+            ),
+          ],
+        ),
       ),
     ],
   );

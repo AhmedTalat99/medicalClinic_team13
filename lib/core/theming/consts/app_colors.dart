@@ -9,6 +9,9 @@ abstract class AppColors {
 
   static const black = Colors.black;
   static const grey = Color.fromARGB(255, 184, 184, 184);
+  static const brightGrey = Color(0xffEFECEC);
   static const deepBlue = Color(0xff23568a);
+  static const star = Color(0xffFFE665);
+  static const springGreen = Color(0xff9ECAE3);
 
 }
