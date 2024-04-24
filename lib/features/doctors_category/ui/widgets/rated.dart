@@ -1,17 +1,16 @@
 import 'package:flutter/material.dart';
-import 'package:medical_clinic_team13/core/theming/consts/app_fonts.dart';
 
 import '../../../../core/theming/consts/app_colors.dart';
-import '../../../../core/theming/consts/size_config.dart';
+import '../../../../core/theming/consts/app_fonts.dart';
 
 class Rated extends StatelessWidget {
-  Rated({super.key});
-
+  Rated({super.key,required this.review});
+  final String review;
   @override
   Widget build(BuildContext context) {
     return Container(
-      width: SizeConfig.screenWidth * 0.27,
-      height: SizeConfig.screenHeight * 0.15,
+      width: 80,
+      height: 28,
       decoration: BoxDecoration(
         border: Border.all(
           color: AppColors.secondary,
@@ -19,18 +18,22 @@ class Rated extends StatelessWidget {
         ),
         borderRadius: BorderRadius.circular(18),
       ),
-      child: Row(children: [
-        Text(
-          '4.8',
-          style: AppFonts.font16W400White.copyWith(
-            fontWeight: FontWeight.w500,
+      child: Row(
+        mainAxisAlignment: MainAxisAlignment.center,
+        children: [
+          Text(
+            review,
+            style: AppFonts.font16W400WhiteNormal.copyWith(
+              fontWeight: FontWeight.w500,
+            ),
           ),
-        ),
-        Icon(
-          Icons.star,
-          color: AppColors.star,
-        ),
-      ]),
+          SizedBox(width: 12),
+          Icon(
+            Icons.star,
+            color: AppColors.star,
+          ),
+        ],
+      ),
     );
   }
 }

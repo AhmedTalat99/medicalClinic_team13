@@ -37,7 +37,7 @@ class _VerticalDoctorCardState extends State<VerticalDoctorCard> {
           color: AppColors.primary,
         ),
         width: SizeConfig.screenWidth * 0.49,
-        height: SizeConfig.screenHeight * 0.28,
+        //height: SizeConfig.screenHeight * 6,
         child: Column(
           children: [
             SizedBox(height: 10),
