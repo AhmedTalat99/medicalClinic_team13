@@ -13,5 +13,8 @@ abstract class AppColors {
   static const deepBlue = Color(0xff23568a);
   static const star = Color(0xffFFE665);
   static const springGreen = Color(0xff9ECAE3);
+  static const backgroundIcon = Color(0xff336EA6);
+  static const grey2 = Color(0xffBDCAD6);
+
 
 }

@@ -92,4 +92,22 @@ class AppFonts {
       fontWeight: FontWeight.w800,
       color: AppColors.deepBlue
   );
+
+  static TextStyle font20W600Black = GoogleFonts.poppins(
+      fontSize: 20,
+      fontWeight: FontWeight.w600,
+      color: AppColors.black
+  );
+
+  static TextStyle font16W400Black = GoogleFonts.poppins(
+      fontSize: 16,
+      fontWeight: FontWeight.w400,
+      color: AppColors.black
+  );
+
+  static TextStyle font20W500Grey = GoogleFonts.poppins(
+      fontSize: 20,
+      fontWeight: FontWeight.w500,
+      color: AppColors.grey2
+  );
 }

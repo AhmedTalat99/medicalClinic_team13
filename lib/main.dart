@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_screenutil/flutter_screenutil.dart';
-
-import 'features/doctors_category/ui/screens/doctors_category_screen.dart';
+import 'features/login/ui/screen/login_screen.dart';
+import 'features/profile/ui/screen/profile_screen.dart';
 
 void main() {
   WidgetsFlutterBinding.ensureInitialized();
@@ -19,8 +18,7 @@ class HomeUser extends StatelessWidget {
       splitScreenMode: true,
       child: MaterialApp(
         debugShowCheckedModeBanner: false,
-        home: DoctorsCategoryScreen(),
-      ),
+        home: ProfileScreen()
     );
   }
 }

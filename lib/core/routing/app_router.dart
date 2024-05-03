@@ -1,4 +1,8 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_bloc/flutter_bloc.dart';
+import 'package:medical_clinic_team13/features/login/ui/screen/login_screen.dart';
+import 'package:medical_clinic_team13/features/profile_details/ui/screen/profile_details.dart';
+import '../../features/login/logic/login_cubit.dart';
 import '../theming/consts/app_strings.dart';
 
 abstract class AppRouter {
@@ -16,6 +20,7 @@ abstract class AppRouter {
   static const kLogin = '/login';
   static const ksignup = '/signup';
 
+  static const kProfile = '/profile';
   static const kProfileDetails = '/profile Details';
 
   static Route<dynamic>? router(RouteSettings settings) {
@@ -23,6 +28,14 @@ abstract class AppRouter {
       case '/':
         return MaterialPageRoute(builder: (context) {
           return const Scaffold(); //replace this Scaffold with a Splash Screen
+        });
+      case kLogin :
+        return MaterialPageRoute(builder: (context) {
+          return const LoginScreen();
+        });
+      case kProfileDetails :
+        return MaterialPageRoute(builder: (context) {
+          return const ProfileDetails();
         });
       default:
         return MaterialPageRoute(builder: (context) {
