@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'features/login/ui/screen/login_screen.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'features/profile/ui/screen/profile_screen.dart';
 
 void main() {
@@ -19,6 +19,7 @@ class HomeUser extends StatelessWidget {
       child: MaterialApp(
         debugShowCheckedModeBanner: false,
         home: ProfileScreen()
+    )
     );
   }
 }
