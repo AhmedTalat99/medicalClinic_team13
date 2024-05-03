@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:medical_clinic_team13/features/login/ui/screen/login_screen.dart';
-import 'package:medical_clinic_team13/features/profile_details/ui/screen/profile_details.dart';
 import '../../features/login/logic/login_cubit.dart';
 import '../theming/consts/app_strings.dart';
 
@@ -31,11 +30,15 @@ abstract class AppRouter {
         });
       case kLogin :
         return MaterialPageRoute(builder: (context) {
-          return const LoginScreen();
-        });
-      case kProfileDetails :
-        return MaterialPageRoute(builder: (context) {
-          return const ProfileDetails();
+          return BlocProvider(
+              create: (BuildContext context) => LoginCubit(),
+              child: BlocConsumer<LoginCubit,LoginState>
+                (listener: (BuildContext context, LoginState state) {  },
+                builder: (BuildContext context, LoginState state) {
+                  return const LoginScreen();
+                },
+              )
+          );
         });
       default:
         return MaterialPageRoute(builder: (context) {
