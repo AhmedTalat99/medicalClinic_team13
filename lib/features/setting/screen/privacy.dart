@@ -3,11 +3,11 @@ import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
 import 'package:medical_clinic_team13/core/style/style.dart';
 import 'package:medical_clinic_team13/core/theming/consts/app_colors.dart';
-import 'package:medical_clinic_team13/featurs/setting/screen/logout.dart';
-import 'package:medical_clinic_team13/featurs/setting/widget/custombutton.dart';
+import 'package:medical_clinic_team13/features/setting/screen/logout.dart';
+import 'package:medical_clinic_team13/features/setting/widget/custombutton.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-import 'package:medical_clinic_team13/featurs/setting/widget/feedback.dart';
-import 'package:medical_clinic_team13/featurs/setting/widget/showdialog.dart';
+import 'package:medical_clinic_team13/features/setting/widget/feedback.dart';
+import 'package:medical_clinic_team13/features/setting/widget/showdialog.dart';
 import '../Model/switchmodel.dart';
 
 class privacy extends StatefulWidget {
