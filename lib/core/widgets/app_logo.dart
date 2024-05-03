@@ -13,7 +13,7 @@ class AppLogo extends StatelessWidget {
   Widget build(BuildContext context) {
     return Column(
       children: [
-        Image.asset(AppImages.appLogo,
+        Image.asset(AppAssets.appLogo,
           width: width,
           height: height,
         ),
