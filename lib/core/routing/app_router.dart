@@ -30,15 +30,7 @@ abstract class AppRouter {
         });
       case kLogin :
         return MaterialPageRoute(builder: (context) {
-          return BlocProvider(
-              create: (BuildContext context) => LoginCubit(),
-              child: BlocConsumer<LoginCubit,LoginState>
-                (listener: (BuildContext context, LoginState state) {  },
-                builder: (BuildContext context, LoginState state) {
-                  return const LoginScreen();
-                },
-              )
-          );
+          return const LoginScreen();
         });
       default:
         return MaterialPageRoute(builder: (context) {
