@@ -1,25 +1,14 @@
 import 'package:flutter/material.dart';
-import 'package:medical_clinic_team13/core/routing/api_service.dart';
-import 'features/login/ui/screen/login_screen.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:medical_clinic_team13/core/widgets/bottomnavigationbar.dart';
 
 void main() {
   WidgetsFlutterBinding.ensureInitialized();
-  runApp(const HomeUser());
-}
-
-class HomeUser extends StatelessWidget {
-  const HomeUser({super.key});
-
-  @override
-  Widget build(BuildContext context) {
-    return ScreenUtilInit(
-      designSize: const Size(360, 690),
-      minTextAdapt: true,
-      splitScreenMode: true,
-      child: MaterialApp(
-        debugShowCheckedModeBanner: false,
-        home: ProfileScreen()
-    )
-    );
-  }
+  runApp(ScreenUtilInit(
+    // Use builder only if you need to use library outside ScreenUtilInit context
+    child: MaterialApp(
+      debugShowCheckedModeBanner: false,
+      home: bottombar(),
+    ),
+  ));
 }
